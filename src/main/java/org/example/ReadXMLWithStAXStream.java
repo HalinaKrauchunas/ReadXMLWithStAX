@@ -11,7 +11,7 @@ public class ReadXMLWithStAXStream {
 
 	public static void main(String[] args) throws FileNotFoundException, XMLStreamException, ParseException {
 		final String DATADIR = "D:\\StAXReader\\src\\main\\resources\\";
-		StAXStreamReader reader = new StAXStreamReader();
+		StAXEventReader reader = new StAXEventReader();
 		List<Customer> data = reader.getDataFromXML(DATADIR + "customers.xml");
 		for (Customer customer : data) {
 			System.out.println(customer);
